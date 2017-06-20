@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <head>
+    <title>Kiwi Device Report</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="report.css" />
+    <script src="report.js"></script>
+  </head>
+  <body>
+    <h1><img src="https://kiwi.ki/wp-content/uploads/2015/05/logo-kiwi.png" /> Kiwi Device Report</h1>
+
+    <div style="background-color:#ccc">
+    <p>
+      Sort reports by: <a id="view1Button" href="#view1">date</a> : <a id="view2Button" href="#view2">type/status</a>
+    </p>
+  </div>
+
+    <div id="view1" hidden>
+      <div id="datesMenu">
+        <p>Date: <input type="text" id="datepicker"></p>
+      </div>
+      <div id="view1Display" hidden>
+        <h3>Most popular devices</h3>
+        <table>
+          <thead>
+            <td>Device ID</td>
+            <td>Type</td>
+            <td>Total Occurences</td>
+            <td>Weekly Percentage change</td>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="view2" hidden>
+      <div id="optionsMenu" class="dropdown">
+        <button type="button" data-toggle="dropdown">Please select a device type or status: <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        </ul>
+      </div>
+      <div id="view2Display" hidden>
+        <h3>List of Devices</h3>
+        <table>
+          <thead>
+            <td>Date</td>
+            <td>Devices</td>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

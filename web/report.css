@@ -1,0 +1,17 @@
+td {
+  padding: 5px;
+}
+.dropdown-divider {
+  background-color: #ccc;
+  text-align: center;
+}
+.dropdown-option {
+  text-align: center;
+}
+.dropdown-option > a {
+  font-weight: bold;
+}
+#datepicker {
+  background-color: #ccc;
+  border: 0px;
+}
